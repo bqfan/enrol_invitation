@@ -31,15 +31,16 @@ $string['pluginname_desc'] = 'The Invitation module allows sending invitations b
 $string['reminder'] = 'Reminder: ';
 
 $string['emailmsgtxt'] =
-    'INSTRUCTIONS:' . "\n" .
+    'Hi,' . "\n" .
     '------------------------------------------------------------' . "\n" .
-    'You have been invited to access the site: {$a->fullname}. You will ' .
-    'need to log in to confirm your access to the site. Be advised that by ' .
-    'clicking on the site access link provided in this ' .
+    'You have been invited to access: "{$a->fullname}".' . "\n" .
+    'You will need to log in to confirm your access to the site.' . "\n" .
+    'You will need to create an account if you don\'t have one yet.' . "\n\n" .
+    'Be advised that by clicking on the site access link provided in this ' .
     'email you are acknowledging that:' . "\n" .
-    ' --you are the person to whom this email was addressed and for whom this' .
+    '  --you are the person to whom this email was addressed and for whom this' .
     '   invitation is intended;' . "\n" .
-    ' --the link below will expire on ({$a->expiration}).' . "\n\n" .
+    '  --the link below will expire on ({$a->expiration}).' . "\n\n" .
     'ACCESS LINK:' . "\n" .
     '------------------------------------------------------------' . "\n" .
     '{$a->inviteurl}' . "\n\n" .
@@ -55,7 +56,7 @@ $string['instructormsg'] =
 $string['assignrole'] = 'Assign role';
 $string['defaultrole'] = 'Default role assignment';
 $string['defaultrole_desc'] = 'Select role which should be assigned to users during invitation enrollments';
-$string['default_subject'] = 'Invitation for {$a}';
+$string['default_subject'] = 'Invitation for "{$a}"';
 $string['editenrollment'] = 'Edit enrollment';
 $string['header_email'] = 'Who do you want to invite?';
 $string['emailaddressnumber'] = 'Email address';
@@ -98,13 +99,15 @@ $string['message_help_link'] = 'see what instructions invitees are sent';
 $string['message_help'] =
     'INSTRUCTIONS:'.
     '<hr />'.
-    'You have been invited to access the site: [site name]. You will ' .
-    'need to log in to confirm your access to the site. Be advised that by ' .
+    'You have been invited to access: [course/test name].' . "\n" .
+    'You will need to log in to confirm your access to the site.' . "\n" .
+    'You will need to create an account if you don\'t have one yet.' . "\n\n" .
+    'Be advised that by ' .
     'clicking on the site access link provided in this ' .
     'email you are acknowledging that:<br />' .
-    ' --you are the person to whom this email was addressed and for whom this ' .
+    '  --you are the person to whom this email was addressed and for whom this ' .
     '   invitation is intended;<br />' .
-    ' --the link below will expire on ([expiration date]).<br /><br />' .
+    '  --the link below will expire on ([expiration date]).<br /><br />' .
     'ACCESS LINK:'.
     '<hr />'.
     '[invite url]<br />'.

@@ -31,11 +31,12 @@ $string['pluginname_desc'] = 'Kutsu moduulin avulla kutsujen lähettäminen säh
 $string['reminder'] = 'Muistutus: ';
 
 $string['emailmsgtxt'] =
-    'OHJEET:' . "\n" .
+    'Hei,' . "\n" .
     '------------------------------------------------------------' . "\n" .
-    'Sinut on kutsuttu käyttämään sivustoa: {$a->fullname}. Saat '.
-    'täytyy kirjautua sisään vahvista pääsyn sivustoon. Neuvottava että ' .
-    'klikkaamalla sivustolla pääsyä linkkiä tässä' .
+    'Sinut on kutsuttu käyttämään: "{$a->fullname}".' . "\n" .
+    'Saat täytyy kirjautua sisään vahvista pääsyn sivustoon.' . "\n" .
+    'Sinun täytyy luoda tilin, jos sinulla ei ole vielä.' . "\n\n" .
+    'Neuvottava että klikkaamalla sivustolla pääsyä linkkiä tässä' .
     'sähköposti olet tunnustaa, että:' . "\n" .
     ' --olet henkilö, jolle tämä sähköpostin oli osoitettu ja joille tämä' .
     '   kutsu on tarkoitettu;' . "\n" .
@@ -55,7 +56,7 @@ $string['instructormsg'] =
 $string['assignrole'] = 'Määritä rooli';
 $string['defaultrole'] = 'Oletus rooli toimeksianto';
 $string['defaultrole_desc'] = 'Valitse tehtävä, joka pitäisi antaa käyttäjille aikana kutsun ilmoittautumiset';
-$string['default_subject'] = 'kutsu {$a}lle';
+$string['default_subject'] = 'Kutsu "{$a}"-lle';
 
 $string['editenrollment'] = 'Muokkaa ilmoittautuminen';
 
@@ -92,7 +93,7 @@ $string['inviteexpiration_desc'] = 'Aika, että kutsu on voimassa (sekunneissa).
 $string['show_from_email'] = 'Salli kutsuttu käyttäjä ottaa yhteyttä minuun {$a->email} (osoitteesi tulee olemaan "FROM" -kenttään. Jos ei valittuna, "FROM" kentässä on {$a->supportemail})';
 $string['inviteusers'] = 'Kutsu käyttäjä';
 $string['maxinviteerror'] = 'Sen täytyy olla numero.';
-$string['maxinviteperday'] = 'MSuurin kutsu päivässä';
+$string['maxinviteperday'] = 'Suurin kutsu päivässä';
 $string['maxinviteperday_help'] = 'Suurin kutsu voidaan lähettää päivässä kurssin.';
 $string['message'] = 'Viesti';
 
@@ -100,9 +101,10 @@ $string['message_help_link'] = 'mitä ohjeita kutsutuille lähetetään';
 $string['message_help'] =
     'OHJEET:'.
     '<hr />'.
-    'Sinut on kutsuttu käyttää sivustoa: [site name]. Saat '.
-    'täytyy kirjautua sisään vahvista pääsyä sivustolle. Neuvottava että '.
-    'klikkaamalla sivustolla pääsyä linkkiä tässä'.
+    'Sinut on kutsuttu käyttää: [kurssin tai testin nimi].' . "\n" .
+    'Saat täytyy kirjautua sisään vahvista pääsyä sivustolle.' . "\n" .
+    'Sinun täytyy luoda tilin, jos sinulla ei ole vielä.' . "\n\n" .
+    'Neuvottava että klikkaamalla sivustolla pääsyä linkkiä tässä'.
     'sähköposti olet tunnustaa, että: <br /> '.
     '  --Ovat jolle tämän sähköpostin oli osoitettu ja joille tämä'.
     'Kutsu on tarkoitettu; <br />'.
